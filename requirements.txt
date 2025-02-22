@@ -1,0 +1,17 @@
+attrs==23.2.1.dev0
+autocommand==2.2.2
+btrfsutil==6.12
+cffi==1.17.1
+cryptography==44.0.0
+filelock==3.16.1
+jaraco.collections==5.1.0
+jaraco.context==6.0.1
+jaraco.functools==4.1.0
+jaraco.text==4.0.0
+more-itertools==10.5.0
+packaging==24.2
+platformdirs==4.3.6
+pycparser==2.22
+python-distutils-extra==2.39
+setuptools==75.8.0
+wheel==0.45.0
