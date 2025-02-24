@@ -14,7 +14,7 @@ def Popup(title, text):
     button = ctk.CTkButton(popup, text="OK", command=popup.destroy)
     button.pack(pady=10, padx=10)
 
-def browseFiles():
+def browse_files():
     file = filedialog.askopenfilename(filetypes=[('PDFs','.pdf')])
     if file:
         convert_n_save(file)
@@ -46,17 +46,11 @@ def main():
 
     button_explore = ctk.CTkButton(window, 
                                         text="Buscar Arquivos",
-                                        command=browseFiles, 
+                                        command=browse_files, 
                                     )
-
-    button_exit = ctk.CTkButton(window, 
-                                text = "Sair",
-                                command = exit
-                            ) 
 
     label_file_explorer.grid(column=1, row=1, padx=10, pady=10)
     button_explore.grid(column=1, row=2, padx=10, pady=5)
-    button_exit.grid(column=1, row=3, padx=10, pady=5)
 
     window.mainloop()
 
